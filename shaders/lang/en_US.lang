@@ -1,0 +1,94 @@
+# ============================================================================
+# DITHER3D SHADER - English Localization
+# ============================================================================
+
+# ============================================================================
+# SCREEN CATEGORIES
+# ============================================================================
+
+screen.DITHER_SETTINGS=Dither Settings
+screen.DITHER_SETTINGS.comment=Configure the core dithering parameters
+
+screen.DITHER_INPUT=Input Brightness
+screen.DITHER_INPUT.comment=Adjust input brightness processing
+
+screen.DITHER_OPTIONS=Global Options
+screen.DITHER_OPTIONS.comment=Toggle global dithering features
+
+# ============================================================================
+# DOT SETTINGS
+# ============================================================================
+
+option.DITHER_DOT_SCALE=Dot Scale
+option.DITHER_DOT_SCALE.comment=Exponentially scales the dot size. Higher values = larger dots.
+value.DITHER_DOT_SCALE.2.0=Tiny
+value.DITHER_DOT_SCALE.3.0=Very Small
+value.DITHER_DOT_SCALE.4.0=Small
+value.DITHER_DOT_SCALE.5.0=Default
+value.DITHER_DOT_SCALE.6.0=Large
+value.DITHER_DOT_SCALE.7.0=Very Large
+value.DITHER_DOT_SCALE.8.0=Huge
+value.DITHER_DOT_SCALE.9.0=Gigantic
+value.DITHER_DOT_SCALE.10.0=Maximum
+
+option.DITHER_SIZE_VARIABILITY=Size Variability
+option.DITHER_SIZE_VARIABILITY.comment=Controls how shading affects the pattern. §e0§r = Bayer-style (dot count varies, size constant). §e1§r = Halftone-style (dot size varies, count constant).
+value.DITHER_SIZE_VARIABILITY.0.0=Bayer Style
+value.DITHER_SIZE_VARIABILITY.0.5=Hybrid
+value.DITHER_SIZE_VARIABILITY.1.0=Halftone Style
+
+option.DITHER_DOT_CONTRAST=Dot Contrast
+option.DITHER_DOT_CONTRAST.comment=Controls dot edge sharpness. §e1.0§r = perfect anti-aliasing (recommended).
+value.DITHER_DOT_CONTRAST.0.0=Blurred
+value.DITHER_DOT_CONTRAST.0.5=Soft
+value.DITHER_DOT_CONTRAST.1.0=Anti-Aliased (Default)
+value.DITHER_DOT_CONTRAST.1.5=Sharp
+value.DITHER_DOT_CONTRAST.2.0=Very Sharp
+
+option.DITHER_STRETCH_SMOOTH=Stretch Smoothness
+option.DITHER_STRETCH_SMOOTH.comment=How much to smooth anisotropic (stretched) dots at shallow angles.
+value.DITHER_STRETCH_SMOOTH.0.0=None
+value.DITHER_STRETCH_SMOOTH.1.0=Default
+value.DITHER_STRETCH_SMOOTH.2.0=Maximum
+
+# ============================================================================
+# INPUT BRIGHTNESS
+# ============================================================================
+
+option.DITHER_EXPOSURE=Exposure
+option.DITHER_EXPOSURE.comment=Exposure multiplier applied to input brightness before dithering.
+value.DITHER_EXPOSURE.0.0=Black
+value.DITHER_EXPOSURE.0.5=Very Dark
+value.DITHER_EXPOSURE.1.0=Default
+value.DITHER_EXPOSURE.2.0=Bright
+value.DITHER_EXPOSURE.5.0=Very Bright
+
+option.DITHER_OFFSET=Offset
+option.DITHER_OFFSET.comment=Offset added to input brightness after exposure. Negative values darken, positive values brighten.
+value.DITHER_OFFSET.-1.0=Darkest
+value.DITHER_OFFSET.-0.5=Darker
+value.DITHER_OFFSET.0.0=Default
+value.DITHER_OFFSET.0.5=Brighter
+value.DITHER_OFFSET.1.0=Brightest
+
+# ============================================================================
+# GLOBAL OPTIONS
+# ============================================================================
+
+option.DITHER_COLOR_MODE=Color Mode
+option.DITHER_COLOR_MODE.comment=Choose the color processing mode. §eGrayscale§r: Convert to grayscale first. §eRGB§r: Separate dithering per channel. §eCMYK§r: Halftone-style printing simulation.
+value.DITHER_COLOR_MODE.0=Grayscale
+value.DITHER_COLOR_MODE.1=RGB Channels
+value.DITHER_COLOR_MODE.2=CMYK Halftone
+
+option.DITHER_INVERSE_DOTS=Inverse Dots
+option.DITHER_INVERSE_DOTS.comment=Swap dot colors. §eOFF§r (recommended) = bright dots on dark background. §eON§r = dark dots on light background.
+
+option.DITHER_RADIAL_COMP=Radial Compensation
+option.DITHER_RADIAL_COMP.comment=Stabilizes dot density under camera rotation by scaling dots toward screen edges. Recommended for perspective cameras.
+
+option.DITHER_QUANTIZE_LAYERS=Quantize Layers
+option.DITHER_QUANTIZE_LAYERS.comment=Prevents dots from gradually morphing when appearing/disappearing. Creates sharper transitions but may cause slight popping.
+
+option.DITHER_DEBUG_FRACTAL=Debug Fractal
+option.DITHER_DEBUG_FRACTAL.comment=Displays pattern size overlay for debugging. Shows which fractal layer is being used at each pixel.
