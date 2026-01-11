@@ -224,7 +224,7 @@ float remapped = texture(ditherRampTex, vec2(raw, 0.5)).r;
 ```glsl
 #define DITHER_DOT_SCALE 3.0        // Larger dots = fewer layers
 #define DITHER_STRETCH_SMOOTH 0.5   // Less anisotropic correction
-#define DITHER_COLOR_MODE 0         // Grayscale only (3× faster)
+#define RENDER_STYLE 1              // Grayscale only (3× faster)
 #define DITHER_RADIAL_COMP false    // Skip rotation compensation
 ```
 
@@ -232,7 +232,7 @@ float remapped = texture(ditherRampTex, vec2(raw, 0.5)).r;
 ```glsl
 #define DITHER_DOT_SCALE 8.0        // Tiny dots
 #define DITHER_STRETCH_SMOOTH 2.0   // Full smoothing
-#define DITHER_COLOR_MODE 2         // CMYK halftone
+#define RENDER_STYLE 2              // CMYK halftone
 #define DITHER_RADIAL_COMP true     // Rotation stability
 ```
 

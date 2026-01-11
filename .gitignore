@@ -416,3 +416,8 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+shaders/docs/CURSEFORGE.md
+shaders/docs/color.md
+shaders/docs/COMPATIBILITY.md
+shaders/docs/INSTALL.md
+shaders/docs/old-TEXTURE.md

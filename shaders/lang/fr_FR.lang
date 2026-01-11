@@ -1,0 +1,245 @@
+# ============================================================================
+# DITHER3D SHADER - Localisation Française
+# ============================================================================
+
+# ============================================================================
+# CATÉGORIES PRINCIPALES
+# ============================================================================
+
+screen.DITHER_SETTINGS=§6⚙§r Paramètres Dither
+screen.DITHER_SETTINGS.comment=Configure la taille des points, contraste, luminosité et lissage
+
+screen.PALETTE_SETTINGS=§b🎨§r Paramètres Palette
+screen.PALETTE_SETTINGS.comment=Correspondance couleurs et options de palette personnalisée
+
+screen.DEBUG_OPTIONS=§c🔧§r Options de Debug
+screen.DEBUG_OPTIONS.comment=Outils de débogage et développement
+
+screen.CUSTOM_COLORS=§e🎨§r Palette Custom
+screen.CUSTOM_COLORS.comment=Définissez votre propre palette 2 ou 4 couleurs pour les modes Custom
+
+# ============================================================================
+# SOUS-MENUS COULEURS CUSTOM
+# ============================================================================
+
+screen.PALETTE_CUSTOM_COLOR1=§0■§r Couleur 1 (Plus sombre)
+screen.PALETTE_CUSTOM_COLOR1.comment=Première couleur de la palette (généralement la plus sombre)
+
+screen.PALETTE_CUSTOM_COLOR2=§f■§r Couleur 2 (Plus claire)
+screen.PALETTE_CUSTOM_COLOR2.comment=Deuxième couleur (généralement la plus claire)
+
+screen.PALETTE_CUSTOM_COLOR3=§8■§r Couleur 3 (Mi-sombre)
+screen.PALETTE_CUSTOM_COLOR3.comment=Troisième couleur (mode 4 couleurs uniquement)
+
+screen.PALETTE_CUSTOM_COLOR4=§7■§r Couleur 4 (Mi-claire)
+screen.PALETTE_CUSTOM_COLOR4.comment=Quatrième couleur (mode 4 couleurs uniquement)
+
+# ============================================================================
+# STYLE DE RENDU (Sélecteur unifié)
+# ============================================================================
+
+option.RENDER_STYLE=§d🖌§r Style de Rendu
+option.RENDER_STYLE.comment=Choisissez votre style de dithering - du grayscale classique aux palettes rétro. Tout au même endroit !
+
+# Modes Couleur
+value.RENDER_STYLE.0=§cR§aV§9B§r Couleur Complète
+value.RENDER_STYLE.1=§7■§r Niveaux de Gris
+value.RENDER_STYLE.2=§bC§dM§eJ§0N§r Halftone
+
+# Palettes Rétro
+value.RENDER_STYLE.3=§f⬤§0 1-Bit Mono§r
+value.RENDER_STYLE.4=§2⬤§a Game Boy§r
+value.RENDER_STYLE.5=§d⬤§b CGA Mode 1§r
+value.RENDER_STYLE.6=§4⬤§c Virtual Boy§r
+value.RENDER_STYLE.7=§6⬤§e Sépia§r
+
+# Palettes Multi-couleurs
+value.RENDER_STYLE.8=§c⬤§f Pico-8 §7(16)§r
+value.RENDER_STYLE.9=§b⬤§f Nord §7(8)§r
+value.RENDER_STYLE.10=§3⬤§f Solarized §7(8)§r
+
+# Palettes Custom
+value.RENDER_STYLE.11=§e⬤§f Custom §7(2)§r
+value.RENDER_STYLE.12=§e⬤§f Custom §7(4)§r
+value.RENDER_STYLE.13=§e⬤§f Custom §7(8)§r
+
+# Palettes Spéciales
+value.RENDER_STYLE.14=§5⬤§8 Dark Fantasy §7(16)§r
+
+# ============================================================================
+# PARAMÈTRES DES POINTS
+# ============================================================================
+
+option.DITHER_DOT_SCALE=Taille des Points
+option.DITHER_DOT_SCALE.comment=Échelle exponentielle de la taille. Valeurs élevées = points plus grands.
+value.DITHER_DOT_SCALE.2.0=Minuscule
+value.DITHER_DOT_SCALE.3.0=Très Petit
+value.DITHER_DOT_SCALE.4.0=Petit
+value.DITHER_DOT_SCALE.5.0=Par défaut
+value.DITHER_DOT_SCALE.6.0=Grand
+value.DITHER_DOT_SCALE.7.0=Très Grand
+value.DITHER_DOT_SCALE.8.0=Énorme
+value.DITHER_DOT_SCALE.9.0=Gigantesque
+value.DITHER_DOT_SCALE.10.0=Maximum
+
+option.DITHER_SIZE_VARIABILITY=Variabilité de Taille
+option.DITHER_SIZE_VARIABILITY.comment=Comment l'ombrage affecte le motif. §e0§r = Bayer (nombre varie). §e1§r = Halftone (taille varie).
+value.DITHER_SIZE_VARIABILITY.0.0=Style Bayer
+value.DITHER_SIZE_VARIABILITY.0.5=Hybride
+value.DITHER_SIZE_VARIABILITY.1.0=Style Halftone
+
+option.DITHER_DOT_CONTRAST=Contraste des Points
+option.DITHER_DOT_CONTRAST.comment=Netteté des bords. §e1.0§r = anti-aliasing parfait (recommandé).
+value.DITHER_DOT_CONTRAST.0.0=Flou
+value.DITHER_DOT_CONTRAST.0.5=Doux
+value.DITHER_DOT_CONTRAST.1.0=Anti-Aliasé (Défaut)
+value.DITHER_DOT_CONTRAST.1.5=Net
+value.DITHER_DOT_CONTRAST.2.0=Très Net
+
+option.DITHER_STRETCH_SMOOTH=Lissage Étirement
+option.DITHER_STRETCH_SMOOTH.comment=Lissage des points étirés aux angles rasants.
+value.DITHER_STRETCH_SMOOTH.0.0=Aucun
+value.DITHER_STRETCH_SMOOTH.1.0=Par défaut
+value.DITHER_STRETCH_SMOOTH.2.0=Maximum
+
+# ============================================================================
+# PARAMÈTRES LUMINOSITÉ
+# ============================================================================
+
+option.DITHER_EXPOSURE=Exposition
+option.DITHER_EXPOSURE.comment=Multiplicateur d'exposition appliqué avant le dithering.
+value.DITHER_EXPOSURE.0.0=Noir
+value.DITHER_EXPOSURE.0.5=Très Sombre
+value.DITHER_EXPOSURE.1.0=Par défaut
+value.DITHER_EXPOSURE.2.0=Lumineux
+value.DITHER_EXPOSURE.5.0=Très Lumineux
+
+option.DITHER_OFFSET=Décalage
+option.DITHER_OFFSET.comment=Décalage de luminosité. Négatif = assombrir, Positif = éclaircir.
+value.DITHER_OFFSET.-1.0=Le Plus Sombre
+value.DITHER_OFFSET.-0.5=Plus Sombre
+value.DITHER_OFFSET.0.0=Par défaut
+value.DITHER_OFFSET.0.5=Plus Clair
+value.DITHER_OFFSET.1.0=Le Plus Clair
+
+# ============================================================================
+# OPTIONS
+# ============================================================================
+
+option.PALETTE_COLOR_MATCH=Correspondance Couleur
+option.PALETTE_COLOR_MATCH.comment=Méthode de mapping. §eLuminance§r = par luminosité (net). §eConscient§r = par similarité (préserve les teintes).
+value.PALETTE_COLOR_MATCH.0=§7Luminance§r
+value.PALETTE_COLOR_MATCH.1=§bConscient des Couleurs§r
+
+option.DITHER_INVERSE_DOTS=Inverser les Points
+option.DITHER_INVERSE_DOTS.comment=Inverser les couleurs. §eDÉSACTIVÉ§r = points clairs sur sombre. §eACTIVÉ§r = points sombres sur clair.
+
+option.DITHER_RADIAL_COMP=Compensation Radiale
+option.DITHER_RADIAL_COMP.comment=Stabilise la densité lors de la rotation de la caméra.
+
+option.DITHER_QUANTIZE_LAYERS=Quantifier les Couches
+option.DITHER_QUANTIZE_LAYERS.comment=Empêche la transformation progressive. Transitions plus nettes.
+
+option.DITHER_DEBUG_FRACTAL=Déboguer Fractal
+option.DITHER_DEBUG_FRACTAL.comment=Affiche la couche fractale utilisée à chaque pixel.
+
+# ============================================================================
+# SLIDERS COULEURS CUSTOM
+# ============================================================================
+
+# Couleur 1 Sliders RGB
+option.PALETTE_CUSTOM_1_R=§c█§r Rouge
+option.PALETTE_CUSTOM_1_R.comment=Canal rouge pour Couleur 1. §c0.0§r = aucun, §c1.0§r = max rouge
+option.PALETTE_CUSTOM_1_G=§a█§r Vert
+option.PALETTE_CUSTOM_1_G.comment=Canal vert pour Couleur 1. §a0.0§r = aucun, §a1.0§r = max vert
+option.PALETTE_CUSTOM_1_B=§9█§r Bleu
+option.PALETTE_CUSTOM_1_B.comment=Canal bleu pour Couleur 1. §90.0§r = aucun, §91.0§r = max bleu
+
+# Couleur 2 Sliders RGB
+option.PALETTE_CUSTOM_2_R=§c█§r Rouge
+option.PALETTE_CUSTOM_2_R.comment=Canal rouge pour Couleur 2. §c0.0§r = aucun, §c1.0§r = max rouge
+option.PALETTE_CUSTOM_2_G=§a█§r Vert
+option.PALETTE_CUSTOM_2_G.comment=Canal vert pour Couleur 2. §a0.0§r = aucun, §a1.0§r = max vert
+option.PALETTE_CUSTOM_2_B=§9█§r Bleu
+option.PALETTE_CUSTOM_2_B.comment=Canal bleu pour Couleur 2. §90.0§r = aucun, §91.0§r = max bleu
+
+# Couleur 3 Sliders RGB
+option.PALETTE_CUSTOM_3_R=§c█§r Rouge
+option.PALETTE_CUSTOM_3_R.comment=Canal rouge pour Couleur 3. §c0.0§r = aucun, §c1.0§r = max rouge
+option.PALETTE_CUSTOM_3_G=§a█§r Vert
+option.PALETTE_CUSTOM_3_G.comment=Canal vert pour Couleur 3. §a0.0§r = aucun, §a1.0§r = max vert
+option.PALETTE_CUSTOM_3_B=§9█§r Bleu
+option.PALETTE_CUSTOM_3_B.comment=Canal bleu pour Couleur 3. §90.0§r = aucun, §91.0§r = max bleu
+
+# Couleur 4 Sliders RGB
+option.PALETTE_CUSTOM_4_R=§c█§r Rouge
+option.PALETTE_CUSTOM_4_R.comment=Canal rouge pour Couleur 4. §c0.0§r = aucun, §c1.0§r = max rouge
+option.PALETTE_CUSTOM_4_G=§a█§r Vert
+option.PALETTE_CUSTOM_4_G.comment=Canal vert pour Couleur 4. §a0.0§r = aucun, §a1.0§r = max vert
+option.PALETTE_CUSTOM_4_B=§9█§r Bleu
+option.PALETTE_CUSTOM_4_B.comment=Canal bleu pour Couleur 4. §90.0§r = aucun, §91.0§r = max bleu
+
+# Couleur 5 Sliders RGB
+option.PALETTE_CUSTOM_5_R=§c█§r Rouge
+option.PALETTE_CUSTOM_5_R.comment=Canal rouge pour Couleur 5. §c0.0§r = aucun, §c1.0§r = max rouge
+option.PALETTE_CUSTOM_5_G=§a█§r Vert
+option.PALETTE_CUSTOM_5_G.comment=Canal vert pour Couleur 5. §a0.0§r = aucun, §a1.0§r = max vert
+option.PALETTE_CUSTOM_5_B=§9█§r Bleu
+option.PALETTE_CUSTOM_5_B.comment=Canal bleu pour Couleur 5. §90.0§r = aucun, §91.0§r = max bleu
+
+# Couleur 6 Sliders RGB
+option.PALETTE_CUSTOM_6_R=§c█§r Rouge
+option.PALETTE_CUSTOM_6_R.comment=Canal rouge pour Couleur 6. §c0.0§r = aucun, §c1.0§r = max rouge
+option.PALETTE_CUSTOM_6_G=§a█§r Vert
+option.PALETTE_CUSTOM_6_G.comment=Canal vert pour Couleur 6. §a0.0§r = aucun, §a1.0§r = max vert
+option.PALETTE_CUSTOM_6_B=§9█§r Bleu
+option.PALETTE_CUSTOM_6_B.comment=Canal bleu pour Couleur 6. §90.0§r = aucun, §91.0§r = max bleu
+
+# Couleur 7 Sliders RGB
+option.PALETTE_CUSTOM_7_R=§c█§r Rouge
+option.PALETTE_CUSTOM_7_R.comment=Canal rouge pour Couleur 7. §c0.0§r = aucun, §c1.0§r = max rouge
+option.PALETTE_CUSTOM_7_G=§a█§r Vert
+option.PALETTE_CUSTOM_7_G.comment=Canal vert pour Couleur 7. §a0.0§r = aucun, §a1.0§r = max vert
+option.PALETTE_CUSTOM_7_B=§9█§r Bleu
+option.PALETTE_CUSTOM_7_B.comment=Canal bleu pour Couleur 7. §90.0§r = aucun, §91.0§r = max bleu
+
+# Couleur 8 Sliders RGB
+option.PALETTE_CUSTOM_8_R=§c█§r Rouge
+option.PALETTE_CUSTOM_8_R.comment=Canal rouge pour Couleur 8. §c0.0§r = aucun, §c1.0§r = max rouge
+option.PALETTE_CUSTOM_8_G=§a█§r Vert
+option.PALETTE_CUSTOM_8_G.comment=Canal vert pour Couleur 8. §a0.0§r = aucun, §a1.0§r = max vert
+option.PALETTE_CUSTOM_8_B=§9█§r Bleu
+option.PALETTE_CUSTOM_8_B.comment=Canal bleu pour Couleur 8. §90.0§r = aucun, §91.0§r = max bleu
+
+# Écrans Couleurs Custom
+screen.PALETTE_CUSTOM_COLOR5=§5■§r Couleur 5
+screen.PALETTE_CUSTOM_COLOR5.comment=Cinquième couleur (mode 8 couleurs uniquement)
+
+screen.PALETTE_CUSTOM_COLOR6=§6■§r Couleur 6
+screen.PALETTE_CUSTOM_COLOR6.comment=Sixième couleur (mode 8 couleurs uniquement)
+
+screen.PALETTE_CUSTOM_COLOR7=§2■§r Couleur 7
+screen.PALETTE_CUSTOM_COLOR7.comment=Septième couleur (mode 8 couleurs uniquement)
+
+screen.PALETTE_CUSTOM_COLOR8=§e■§r Couleur 8
+screen.PALETTE_CUSTOM_COLOR8.comment=Huitième couleur (mode 8 couleurs uniquement)
+
+# ============================================================================
+# PROFILS
+# ============================================================================
+
+profile.POTATO=§8Patate§r
+profile.LOW=§7Bas§r
+profile.MEDIUM=§fMoyen§r
+profile.HIGH=§aÉlevé§r
+profile.ULTRA=§6Ultra§r
+profile.GAMEBOY=§2Game Boy§r
+profile.CGA=§dCGA§r
+
+profile.comment.POTATO=Monochrome 1-Bit. Impact minimal.
+profile.comment.LOW=Dithering niveaux de gris. Meilleures performances.
+profile.comment.MEDIUM=Palette Pico-8 16 couleurs. Équilibré.
+profile.comment.HIGH=Séparation complète des canaux RVB.
+profile.comment.ULTRA=Simulation d'impression CMJN halftone.
+profile.comment.GAMEBOY=§aPalette Game Boy§r classique verte.
+profile.comment.CGA=§dCGA Mode 1§r cyan/magenta.
